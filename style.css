@@ -117,4 +117,9 @@ input {
     #inputType, #resultType{
         width: 45.6%;
     }
+
+    #inputType,
+    #resultType{
+      font-size: 14px;
+    }
 }
