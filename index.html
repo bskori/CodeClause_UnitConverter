@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeClause Unit Converter</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <h1>Unit Converter</h1>
     <div id="container"> 
+        <h1 id="title">Unit Converter</h1>
+
+        <div class="container_elements">
+        <select id="unitType">
+            <option value="length">Length</option>
+            <option value="area">Area</option>
+            <option value="speed">Speed</option>
+            <option value="temperature">Temperature</option>
+            <option value="time">Time</option>
+            <option value="volume">Volume</option>
+        </select>
+    </div>
+
+        <div class="container_elements">
+            <input type="text" class="no-outline" placeholder="Input" id="input">
+             <span>=</h1>
+        <input type="text" placeholder="Result" id="result">
+        </div>
         
-        <div class="input-div">
-            <label>Feet</label> <br>
-            <input type="number" value="1" id="feet" class="input">
-        </div>
+       <div class="container_elements">
+        <select name="inputType" id="inputType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+        </select>
 
-        <div class="input-div">
-            <h1>=</h1>
-        </div>
-
-        <div class="input-div">
-            <label>Inches</label> <br>
-            <input type="number" value="12" id="inch" class="input">
-        </div>
+        <select name="resultType" id="resultType">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+        </select>
+       </div>
 
     </div>
 
